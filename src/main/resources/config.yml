@@ -1,0 +1,284 @@
+# DONKEY HORSE HUSK LLAMA POLAR_BEAR MULE SILVERFISH SKELETON_HORSE ZOMBIE_HORSE
+entities:
+  BLAZE:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Blaze
+  CAVE_SPIDER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_CaveSpider
+  CHICKEN:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Chicken
+  COW:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Cow
+  CREEPER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 4
+  ELDER_GUARDIAN:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_EGuardian
+  ENDER_DRAGON:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 5
+  EVOKER: &id001
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Illager
+  VINDICATOR: *id001
+  GHAST:
+    chance:
+      base: 0.15
+      lootingModifier: 0.05
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Ghast
+  GUARDIAN:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Guardian
+  MAGMA_CUBE:
+    chance:
+      base: 0.01
+      lootingModifier: 0.001
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_LavaSlime
+  MUSHROOM_COW:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_MushroomCow
+  OCELOT:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Ocelot
+  PIG:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Pig
+  PLAYER:
+    chance:
+      base: 1
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+  RABBIT:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Rabbit
+  SHEEP:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Sheep
+  SHULKER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Shulker
+  SKELETON:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 0
+  SLIME:
+    chance:
+      base: 0.01
+      lootingModifier: 0.001
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Slime
+  SPIDER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Spider
+  SQUID:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Squid
+  SPIDER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Spider
+  STRAY:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Stray
+  VEX:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Vex
+  VILLAGER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Villager
+  WITCH:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Witch
+  WITHER_SKELETON:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 1
+  WITHER:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Wither
+  WOLF:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_Wolf
+  PIG_ZOMBIE:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_PigZombie
+  ZOMBIE:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 2

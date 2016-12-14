@@ -2,7 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.jikoo</groupId>
-  <artifactId>HeadHunter</artifactId>
+  <artifactId>headhunter</artifactId>
+  <name>HeadHunter</name>
   <version>0.0.1-SNAPSHOT</version>
 
   <repositories>
@@ -29,6 +30,7 @@
   </dependencies>
 
   <build>
+    <finalName>${project.name}</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

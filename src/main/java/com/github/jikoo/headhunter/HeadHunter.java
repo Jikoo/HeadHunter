@@ -12,6 +12,8 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.HandlerList;
+import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
@@ -22,7 +24,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  * 
  * @author Jikoo
  */
-public class HeadHunter extends JavaPlugin {
+public class HeadHunter extends JavaPlugin implements Listener {
 
 	private final HashMap<EntityType, Pair<Pair<Double, Double>, Pair<ItemStack, String>>> entityTypeHeads = new HashMap<>();
 
@@ -70,6 +72,15 @@ public class HeadHunter extends JavaPlugin {
 			entityTypeHeads.put(type, new ImmutablePair<>(new ImmutablePair<>(baseChance, lootingModifier),
 					new ImmutablePair<>(stack, entity.getString("skullOwner", null))));
 		}
+
+		if (!entityTypeHeads.isEmpty()) {
+			this.getServer().getPluginManager().registerEvents(this, this);
+		}
+	}
+
+	@Override
+	public void onDisable() {
+		HandlerList.unregisterAll((Listener) this);
 	}
 
 	@EventHandler
@@ -103,7 +114,7 @@ public class HeadHunter extends JavaPlugin {
 			if (owner != null) {
 				meta.setOwner(owner);
 			} else if (event.getEntity() instanceof Player){
-				meta.setOwner(killer.getName());
+				meta.setOwner(event.getEntity().getName());
 			}
 		}
 

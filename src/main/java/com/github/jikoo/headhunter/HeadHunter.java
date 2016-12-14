@@ -15,6 +15,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -118,6 +119,11 @@ public class HeadHunter extends JavaPlugin implements Listener {
 			}
 		}
 
+		if (event instanceof PlayerDeathEvent && ((PlayerDeathEvent) event).getKeepInventory()) {
+			// Drop heads even if items will not be dropped
+			event.getEntity().getWorld().dropItemNaturally(event.getEntity().getLocation(), head);
+			return;
+		}
 		event.getDrops().add(head);
 	}
 

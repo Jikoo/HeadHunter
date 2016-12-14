@@ -176,6 +176,15 @@ entities:
       type: SKULL_ITEM
       damage: 3
     owner: MHF_Slime
+  SNOWMAN:
+    chance:
+      base: 0.05
+      lootingModifier: 0.01
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+    owner: MHF_SnowGolem
   SPIDER:
     chance:
       base: 0.05
